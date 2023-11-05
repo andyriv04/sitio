@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#img7{
+	border-radius:15%;
+	width: 400px;
+	height: 280px;
+	margin: 25px;
+	
+}
+
+
+#img7 {
+	float: right;
+}
+
+#img8{
+	border-radius:15%;
+	width: 400px;
+	height: 280px;
+	margin: 25px;
+	
+}
+
+#im8{
+	float: left-side;
+}
+
+.titulo {
+    color: #054E83;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #82C9FE;
+    /* fallback for old browsers */
+    background: #82C9FE;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: #82C9FE;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.rectangulo {
+    position: absolute;
+    margin-left: 31%;
+    margin-top: 11%;
+    width: 500px;
+    height: 150px;
+    border: solid 3px rgb(255, 255, 255); 
+    border-radius: 1rem ;
+    
+
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    
+}
+
+header .textos-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-family: cursive;
+    font-size: 60px;
+    color:#fff;
+    position: relative;
+}
+
+.textos-header h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color:#fff;
+    position: relative;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+
+}
+svg{
+    height: 100%;
+    width: 100%;
+}
+path{
+    stroke: none;
+    fill: #fff;
+    
+}
+/* About princ */
+
+main .sobre-principal{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-principal{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-princ{
+    width: 40%;
+    height: 400px;
+}
+
+.sobre-principal .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h4{
+    margin-bottom: 25px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.contenido-textos h3 span{
+    background: #065786;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+.contenido-textos ul{
+    padding-left: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 15px;
+    font-weight: 300;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Galeria */
+
+
+.portafolio{
+    background: white;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Cards */
+.pcards  {
+    background: #f2f2f2;
+}
+.p1cards{
+    background: white;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+    
+}
+
+.cards .card{
+    background: #0860A2;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* links*/
+.links{
+    text-align: center;
+}
+
+.inicio{
+    width: 80px;
+}
+/*  Serv */
+
+.about-serv{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.about-info{
+    background: white;
+    padding-bottom: 30px;
+}
+
+.serv-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serv-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.serv-ind img{
+    width: 250px;
+    height: 150px;
+}
+
+.serv-ind h3{
+    margin: 10px 0;
+}
+
+.serv-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+.imgabout{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid #fff;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.imgabout2{
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid #fff;
+    float: right;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Image galery*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 280px;
+    margin-left: 40px;
+    
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 180px;
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: center;
+    
+  }
+  div.desc1{
+    filter: grayscale(100%);
+  }
+  .imgs{
+    width: "600"; 
+    height: "400";
+  }
+
+  /*Table*/
+ .maintable{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+td{
+    height: 100px;
+}
+  table, th, td{
+    border: 1px solid;
+    border-color: blueviolet;
+    padding: 10px;
+    
+}
+
+.main-title{
+    background-color: lightpink; 
+    font-size: 20px;
+}
+.mainsent{
+    text-align: center;
+    font-size: 16px;
+}
+.sent{
+    font-size: 15px;
+    text-align: justify;
+}
+.debits{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Invest*/
+.imgpage5{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgpage51{
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.table11{
+    text-align: center;
+}
+
+.phytonlist{
+    list-style-type: circle;
+    list-style-position: inside;
+}
